@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pratham's Portfolio</title>
+    <meta name="description" content="Pratham's Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+
+
+    <!-    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo:400,400i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <!-- Lightbox-->
+    <link rel="stylesheet" href="vendor/lightbox2/css/lightbox.min.css">
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Parallax-->
+    <link rel="stylesheet" href="vendor/onepage-scroll/onepage-scroll.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="/img/fav_light.png" type="image/x-icon" id="faviconTag">
+
+    <script>
+      const favicon = document.getElementById("faviconTag");
+      const isDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+      console.log(isDark)
+
+      const changeFavicon = () => {
+        if (isDark.matches)
+          favicon.href = "/img/fav_dark.png";
+        else
+          favicon.href = "/img/fav_light.png";
+      }
+
+      isDark.addEventListener('change', changeFavicon);
+
+      // setInterval(() => {
+      //   changeFavicon();
+      // }, 1000);
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  </head>
+  <body>
+
+
+    <div class="main">
+      <section class="bg-cover bg-center hero">
+        <div class="dark-overlay"></div>
+        <div class="position-relative z-index-1">
+          <div class="container text-center text-white">
+            <p class="font-italic lead">Welcome to my website!</p>
+            <h1 class="text-uppercase my-4">I am 
+              <div id="typed-strings">
+                <p>Pratham Kundu</p>
+                <p>Professional</p>
+              </div>
+              <span id="typed"></span>
+            </h1>
+            <p class="font-italic lead">Software Developer with 2 Years of Experience.</p>
+          </div>
+        </div>
+        <div class="scroll-btn link-scroll"><i class="fas fa-angle-double-down"></i></div>
+      </section>
+
+      <script>
+        var typed = new Typed('#typed', {
+          stringsElement: '#typed-strings',
+          typeSpeed: 70,
+          backSpeed: 70,
+          backDelay: 2000,
+          loop: true,
+        });
+      </script>
+
+
+      <section id="1">
+        <div class="d-flex h-100 align-items-center">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6 mb-4 mb-lg-0">
+                <header class="text-center">
+                  <h2 class="text-uppercase lined">About Me</h2>
+                </header>
+                <p class="lead text-center"><em>Pratham Kundu - New Delhi, India</em></p>
+                <!-- <br>With much more to add! </p> -->
+
+                <!-- <p>I'm a 2nd year student pursuing Software Development.</p> -->
+
+                <p class="lead" style="font-weight: 900;">Passionate Web Designer <br> Creating Engaging Online Experiences</p class="lead">
+  
+                <p>I am passionate about crafting visually appealing and user-friendly websites that leave a lasting impact on their users.</p>
+                
+                <!-- <p>Throughout my career, I have had the opportunity to work with diverse clients which I believe has allowed me to develop a keen understanding of their unique needs and objectives.</p> -->
+                
+                <p class="lead" style="font-weight: 900;">My Approach Towards Web Developement</p class="lead">
+                
+                <p>I believe that a successful website goes beyond aesthetics. It should effectively communicate the client's brand, engage visitors, and drive meaningful interactions. With this in mind, my approach to web design combines creativity, functionality, and a user-centered perspective.</p>
+                
+                <p>I strive to create seamless user experiences by focusing on intuitive navigation, responsive design, and performance optimization. I am well-versed in current design trends, web standards, and best practices, ensuring that the websites I develop are both visually appealing and technically robust.</p>
+
+                <!-- <p>I'm here to provide value and if you want to know <b>WHY ME?</b> 
+                <br>I have whatever-it-takes attitude, paired with <br> an unwavering commitment to prove it.</p> -->
+              </div>
+              <div class="col-lg-6"><img id="aboutMeImage" src="img/about.png" alt="Pratham Kundu" class="img-fluid d-block mx-auto"></div>
+            </div>
+            <p class="lead" style="font-weight: 400;"><b>HTML | CSS | TailwindCSS | Bootstrap | JavaScript | jQuery | Typed.js | JSON | MySQL | PHP | Laravel | Python | Django | Git | Wordpress</b>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="bg-gray">
+        <div class="d-flex h-100 align-items-center">
+          <div class="container">
+            <header class="mb-5 text-center">
+              <h2 class="text-uppercase lined">Services</h2>
+            </header>
+            <div class="row text-center">
+              <!-- <div class="col-lg-4 col-md-6 mb-4">
+                <div class="icon mb-3"><i class="fas fa-desktop"></i></div>
+                <h4 class="text-uppercase lined lined-compact">Web design</h4>
+                <p class="text-mted">Fifth abundantly made Give sixth hath. Cattle creature i be don't them.</p>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="icon mb-3"><i class="fas fa-print"></i></div>
+                <h4 class="text-uppercase lined lined-compact">Print</h4>
+                <p class="text-mted">Advantage old had otherwise sincerity dependent additions. It in adapted natural.</p>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="icon mb-3"><i class="fas fa-globe-americas"></i></div>
+                <h4 class="text-uppercase lined lined-compact">SEO and SEM</h4>
+                <p class="text-mted">Am terminated it excellence invitation projection as. She graceful shy.</p>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="icon mb-3"><i class="far fa-lightbulb"></i></div>
+                <h4 class="text-uppercase lined lined-compact">consulting</h4>
+                <p class="text-mted">Fifth abundantly made Give sixth hath. Cattle creature i be don't them.</p>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="icon mb-3"><i class="far fa-envelope"></i></div>
+                <h4 class="text-uppercase lined lined-compact">Email marketing</h4>
+                <p class="text-mted">Advantage old had otherwise sincerity dependent additions. It in adapted natural.</p>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="icon mb-3"><i class="fas fa-user"></i></div>
+                <h4 class="text-uppercase lined lined-compact">UI &amp; UX</h4>
+                <p class="text-mted">Am terminated it excellence invitation projection as. She graceful shy.</p>
+              </div> -->
+              <div class="container">
+                <div class="row services">
+                  <div class="col-lg-12">
+                    <div class="row gy-4 gx-5">
+                      <div class="col-md-4">
+                        <div class="mb-4"><i class="fas fa-desktop fa-3x"></i></div>
+                        <h5 class="mb-4">Web Design</h5>
+                        <p>I prioritize the technical aspects of web design, ensuring that the websites I create are responsive, mobile-friendly, and optimized for search engines.</p>
+                        <p>I offer a personalized approach to web design, working closely with clients to understand their specific goals, target audience, and desired functionalities.</p>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="mb-4"><i class="fas fa-globe-americas fa-3x"></i></div>
+                        <h5 class="mb-4">SEO and SEM</h5>
+                        <p>Additionally, I offer SEM services that involve paid advertising campaigns to increase website visibility in search engine results pages.</p>
+                        <p>I work closely with my clients to understand their business objectives, target audience, and industry competition. I provide personalized SEO and SEM strategies tailored to their specific needs, ensuring that their websites gain a competitive edge in the online marketplace.</p>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="mb-4"><i class="fas fa-server fa-3x"></i></div>
+                        <h5 class="mb-4">Web Hosting</h5>
+                        <p>I take pride in offering personalized hosting solutions that prioritize performance and reliability. I understand the importance of providing exceptional customer support. </p>
+                        <p>As a freelancer, I am readily available to address any hosting-related concerns my clients may have, offering timely assistance and troubleshooting when needed.</p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section>
+        <div class="d-flex h-100 align-items-center">
+          <div class="container-fluid" style="width: 80vw !important; margin: auto !important;">
+            <header class="text-center mb-5">
+              <h2 class="text-uppercase lined">Portfolio</h2>
+            </header>
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <p class="lead">Because I firmly believe that, Actions speak louder than words</p>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4"><a href="img/KenChen.png" data-lightbox="image-1" data-title="Ken Chen's Portfolio Website" class="d-block mb-1"><img src="img/KenChen.png" alt="Ken Chen's Portfolio Website" class="img-fluid d-block mx-auto portfolioImages"></a>
+              <button type="button" class="portfolioButton btn btn-outline-dark mt-5"><a href="https://innovative-ken.netlify.app/" target="_blank">Visit Site</a></button>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4"><a href="img/Explorex.jpg" data-lightbox="image-1" data-title="ExploreX - A Travel Website" class="d-block mb-1"><img src="img/Explorex.jpg" alt="ExploreX - A Travel Website" class="img-fluid d-block mx-auto portfolioImages"></a>
+              <button type="button" class="portfolioButton btn btn-outline-dark mt-5"><a href="http://www.explorex.42web.io/" target="_blank">Visit Site</a></button>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4"><a href="img/SaurabhSuman.png" data-lightbox="image-1" data-title="Saurbah Suman's Portfolio Website" class="d-block mb-1"><img src="img/SaurabhSuman.png" alt="Saurbah Suman's Portfolio Website" class="img-fluid d-block mx-auto portfolioImages"></a>
+              <button type="button" class="portfolioButton btn btn-outline-dark mt-5"><a href="http://saurabhsuman.rf.gd/" target="_blank">Visit Site</a></button>
+              </div>
+              <!-- <div class="col-lg-4 col-md-6 mb-4"><a href="img/portfolio-4.jpg" data-lightbox="image-1" data-title="My caption" class="d-block mb-1"><img src="img/portfolio-4.jpg" alt="..." class="img-fluid d-block mx-auto"></a></div>
+              <div class="col-lg-4 col-md-6 mb-4"><a href="img/portfolio-5.jpg" data-lightbox="image-1" data-title="My caption" class="d-block mb-1"><img src="img/portfolio-5.jpg" alt="..." class="img-fluid d-block mx-auto"></a></div>
+              <div class="col-lg-4 col-md-6 mb-4"><a href="img/portfolio-6.jpg" data-lightbox="image-1" data-title="My caption" class="d-block mb-1"><img src="img/portfolio-6.jpg" alt="..." class="img-fluid d-block mx-auto"></a></div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section>
+        <div class="d-flex h-100 align-items-center">
+          <div class="container">
+            <header class="text-center mb-5">
+              <h2 class="text-uppercase lined">Let's Connect</h2>
+            </header>
+            <div class="row">
+              <!-- <div class="col-lg-6">
+                <form action="" class="contact-form">
+                  <div class="row">
+                    <div class="form-group col-lg-6">
+                      <label for="firstName">Your firstname *</label>
+                      <input id="firstName" type="text" name="firstname" placeholder="Enter your firstname" class="form-control">
+                    </div>
+                    <div class="form-group col-lg-6">
+                      <label for="lastName">Your lastname *</label>
+                      <input id="lastName" type="text" name="lastname" placeholder="Enter your lastname" class="form-control">
+                    </div>
+                    <div class="form-group col-lg-12">
+                      <label for="email">Your email *</label>
+                      <input id="email" type="email" name="email" placeholder="Enter your email" class="form-control">
+                    </div>
+                    <div class="form-group col-lg-12">
+                      <label for="message">Your message for us *</label>
+                      <textarea id="message" name="message" placeholder="Enter your message" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group col-lg-12">
+                      <button type="submit" class="btn btn-outline-primary w-100">Send message</button>
+                    </div>
+                  </div>
+                </form>
+              </div> -->
+              <div class="col-lg-12">
+                <p class="text-center">Thank you for your interest in my web design services.</p>
+                <p class="text-center lead" style="width: 40vw; margin: auto">Whether you have a question, want to discuss a project, or just say hello, feel free to reach out to me using following contact information or through the social links listed below.</p>
+                <!-- <p >Feel free to reach out to me using the following contact information:</p> -->
+                <p class="text-center lead mt-3">Email: prathamkundu0@gmail.com</p>
+                <p class="text-center lead">Phone: +91 6201271944</p>
+                <ul class="mb-0 list-inline text-center">
+                  <li style="scale: 175%; margin-right: 30px;" class="m-3 list-inline-item"><a href="https://wa.me/+916201271944" class="socials social-link social-link-whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                  <li style="scale: 175%; margin-right: 30px;" class="m-3 list-inline-item"><a href="https://twitter.com/pratham_kundu_" class="socials social-link social-link-twitter"><i class="fab fa-twitter"></i></a></li>
+                  <!-- <li style="scale: 175%; margin-right: 30px;" class="list-inline-item"><a href="#" class="social-link social-link-google-plus"><i class="fab fa-google-plus-g"></i></a></li> -->
+                  <li style="scale: 175%; margin-right: 30px;" class="m-3 list-inline-item"><a href="" class="socials social-link-github"><i class="fab fa-github mt-2" style="scale: 175%;"></i></a></li>
+                  <li style="scale: 175%; margin-right: 30px;" class="m-3 list-inline-item"><a href="mailto:prathamkundu0@gmail.com?subject=I%20want%20to%20connect!" class="socials social-link social-link-email"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <footer class="py-5 mt-5">
+              <div class="row">
+                <div class="col-lg-6 text-center text-lg-left">
+                  <p class="font-italic mb-0 text-gray">Copyrights &copy;2022 Pratham Kundu</p>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </section>
+
+
+    </div>
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/onepage-scroll/jquery.onepage-scroll.min.js"></script>
+    <script src="vendor/lightbox2/js/lightbox.min.js"></script>
+    <script src="js/front.js"></script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </body>
+</html>

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Cardo:400,400i');
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+#aboutMeImage {
+  border-radius: 20%;
+}
+
+.portfolioButton {
+  width: fit-content;
+  margin-left: 33%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+  scale: 100%;
+  transition: scale 1s;
+  border-radius: 7px;
+  color: white;
+
+}
+
+.portfolioButton:hover {
+    scale: 110%;
+    z-index: 1000;
+    color: white;
+}
+
+.portfolioImages{
+    scale: 100%;
+    transition: scale 1s;
+}
+
+.portfolioImages:hover {
+    scale: 110%;
+    z-index: 1000;
+}
+
+.portfolioImages:hover .portfolioButton{
+    margin-top: 100px;
+}
+
+.fa-github:hover{
+    color: black;
+    scale: 210% !important;
+}
+
+.socials:hover{
+    scale: 120%;
+}
