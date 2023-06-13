@@ -25,7 +25,7 @@
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="css/custom.css">
     <!-- Favicon-->
-    <link rel="shortcut icon" href="/img/fav_light.png" type="image/x-icon" id="faviconTag">
+    <link rel="shortcut icon" href="img/fav_light.png" type="image/x-icon" id="faviconTag">
 
     <script>
       const favicon = document.getElementById("faviconTag");
@@ -35,9 +35,9 @@
 
       const changeFavicon = () => {
         if (isDark.matches)
-          favicon.href = "/img/fav_dark.png";
+          favicon.href = "img/fav_dark.png";
         else
-          favicon.href = "/img/fav_light.png";
+          favicon.href = "img/fav_light.png";
       }
 
       isDark.addEventListener('change', changeFavicon);
